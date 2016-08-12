@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Filterer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple_sky" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-vR-Q5o">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwQ-EY-4kj">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0is-dp-BBY">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzj-vM-Drd">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="0eW-Kr-nwn"/>
+                                                </constraints>
+                                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                                <state key="normal" title="New Photo"/>
+                                                <connections>
+                                                    <action selector="onNewPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFr-8g-oE6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBl-gW-oTX">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="TaB-Xb-6NH"/>
+                                                </constraints>
+                                                <state key="normal" title="Filter"/>
+                                                <connections>
+                                                    <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCF-Iu-PrJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbR-WY-ApG">
+                                                <frame key="frameInset" minX="188" width="93" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="ijA-P1-HTE"/>
+                                                </constraints>
+                                                <state key="normal" title="Compare"/>
+                                                <connections>
+                                                    <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IfI-KH-7cG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9U-j0-b4N">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="YF4-Q1-Tjr"/>
+                                                </constraints>
+                                                <state key="normal" title="Share"/>
+                                                <connections>
+                                                    <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3w7-ia-VoA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0is-dp-BBY" firstAttribute="leading" secondItem="gwQ-EY-4kj" secondAttribute="leading" id="4eY-kk-E1B"/>
+                                    <constraint firstAttribute="trailing" secondItem="0is-dp-BBY" secondAttribute="trailing" id="L7J-WE-Y5o"/>
+                                    <constraint firstAttribute="bottom" secondItem="0is-dp-BBY" secondAttribute="bottom" id="TiD-3m-o3Q"/>
+                                    <constraint firstItem="0is-dp-BBY" firstAttribute="top" secondItem="gwQ-EY-4kj" secondAttribute="top" id="mud-WW-GKB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bcn-vR-Q5o" secondAttribute="trailing" id="BJx-2y-lKt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gwQ-EY-4kj" secondAttribute="bottom" id="Gpa-U6-T3p"/>
+                            <constraint firstItem="Bcn-vR-Q5o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Hfh-aa-5Kn"/>
+                            <constraint firstItem="gwQ-EY-4kj" firstAttribute="top" secondItem="Bcn-vR-Q5o" secondAttribute="bottom" id="MC9-ZV-5HV"/>
+                            <constraint firstAttribute="trailing" secondItem="gwQ-EY-4kj" secondAttribute="trailing" id="fhq-4g-90v"/>
+                            <constraint firstItem="Bcn-vR-Q5o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mGp-e1-UbO"/>
+                            <constraint firstItem="gwQ-EY-4kj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xXI-ht-GBv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueFilter" destination="mbg-zt-4qE" id="j6I-a8-ymj"/>
+                        <outlet property="bottomMenu" destination="gwQ-EY-4kj" id="dJK-Mj-5Ad"/>
+                        <outlet property="brighterByHalf" destination="Bg0-Aq-3rh" id="Dxx-bJ-qF3"/>
+                        <outlet property="brighterByQuarter" destination="6Ze-5d-seG" id="0eR-Mi-e41"/>
+                        <outlet property="filterButton" destination="pBl-gW-oTX" id="RT1-Gc-Qk0"/>
+                        <outlet property="greenFilter" destination="Soc-Zt-JgX" id="ICf-hC-BXG"/>
+                        <outlet property="imageView" destination="Bcn-vR-Q5o" id="EY0-1A-1Dp"/>
+                        <outlet property="redFilter" destination="dbc-LA-aga" id="8JT-w4-UDP"/>
+                        <outlet property="secondaryMenu" destination="ciI-O8-UeS" id="tAO-4H-UPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ciI-O8-UeS">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y7B-OX-jD9">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-LA-aga">
+                                    <state key="normal" title="Red"/>
+                                    <connections>
+                                        <action selector="onRedFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRO-tB-G7v"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soc-Zt-JgX">
+                                    <state key="normal" title="Green"/>
+                                    <connections>
+                                        <action selector="onGreenFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnM-0k-3fe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbg-zt-4qE">
+                                    <state key="normal" title="Blue"/>
+                                    <connections>
+                                        <action selector="onBlueFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ck2-4v-vsm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ze-5d-seG">
+                                    <state key="normal" title="25%"/>
+                                    <connections>
+                                        <action selector="onQuarterBrighter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7s-bF-CPo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg0-Aq-3rh">
+                                    <state key="normal" title="50%"/>
+                                    <connections>
+                                        <action selector="onHalfBrighter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mr1-Ma-UKc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Y7B-OX-jD9" firstAttribute="top" secondItem="ciI-O8-UeS" secondAttribute="top" id="Cib-sp-SkV"/>
+                        <constraint firstItem="Y7B-OX-jD9" firstAttribute="leading" secondItem="ciI-O8-UeS" secondAttribute="leading" id="Nin-lA-oLq"/>
+                        <constraint firstAttribute="trailing" secondItem="Y7B-OX-jD9" secondAttribute="trailing" id="eC3-ug-eOy"/>
+                        <constraint firstAttribute="bottom" secondItem="Y7B-OX-jD9" secondAttribute="bottom" id="wW7-hK-xLH"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-465" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="purple_sky" width="324" height="242"/>
+    </resources>
+</document>
